@@ -1,0 +1,23 @@
+import React from 'react'
+
+type Props = {}
+
+const Login = (props: Props) => {
+  return (
+    <>
+      <div className='mb-5'>
+       <label htmlFor="email" className='text-black '>Your Email</label> 
+	<div><input type="text" placeholder='abc@gmail.com' className='block w-full border border-black p-2 pl-4 rounded-full text-xl mt-2 text-black' /></div>
+      </div>
+
+      <div className='mb-5'>
+        <label htmlFor="email" className='text-black '>Your Password</label> 
+	<div><input type="text" placeholder='*********' className='block w-full border border-black p-2 pl-4 rounded-full text-xl mt-2 text-black' /></div>
+	<span><a href="#" className='text-blue-400 '>Forgot Password?</a></span>
+	<button className="bg-blue-500 text-white p-2 mt-4 hover:bg-blue-600 w-full rounded-full">Click Me</button>
+      </div>
+    </>
+  )
+}
+
+export default Login
